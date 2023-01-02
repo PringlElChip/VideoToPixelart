@@ -1,0 +1,13 @@
+#BIMP 2.0
+#MANIPULATION SET DEFINITION
+
+[USERDEF0]
+procedure=gimp-image-convert-indexed
+num_params=7
+PARAM0=NOT_USED
+PARAM1=3
+PARAM2=4
+PARAM3=0
+PARAM4=0
+PARAM5=0
+PARAM6=aap
