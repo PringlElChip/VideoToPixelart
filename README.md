@@ -121,8 +121,16 @@ Finally, you will want to re-add the original video and delete the blue channel,
 
 Change the output destination, to a desired location and render!
 
+## EXAMPLES
+
+![e1](/assets/examples1.png)
+
+Example video: https://www.youtube.com/watch?v=39upDHvTUa0
+
 ## THANKS FOR READING!
 
 If you do use my method, could you please remember to give credit. It means a lot!
-**SUBSCRIBE TO MY YOUTUBE CHANNEL TO SEE SOME EXAMPLES!
-https://www.youtube.com/@pringlthechip**
+
+**SUBSCRIBE TO MY YOUTUBE CHANNEL!**
+
+**https://www.youtube.com/@pringlthechip**
