@@ -125,7 +125,11 @@ Change the output destination, to a desired location and render!
 
 ![e1](/assets/examples1.png)
 
-Example video: https://www.youtube.com/watch?v=39upDHvTUa0
+Example videos: 
+
+https://www.youtube.com/watch?v=39upDHvTUa0
+
+https://www.youtube.com/watch?v=T6-y8z4XLBk&t=58s
 
 ## THANKS FOR READING!
 
