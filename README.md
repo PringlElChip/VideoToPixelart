@@ -4,6 +4,8 @@
 
 Here is my guide on how you can semi-easily convert videos to pixelart. This guide also works for images, just scroll down to the Gimp processing chapters. 
 
+**If you want to see some example images/videos, scroll down to the end of the page!**
+
 *Im working on a single gimp plugin to do all the image processing. This should speed up processing time for each individual image*
 
 ## PREREQUISITES
@@ -22,7 +24,7 @@ Before we start making the video, I advise you to make these folders before we g
 - Main folder. This will be the place we output all are files to. I recommend naming it something related to the video. The next folders will be inside of the main folder.
 - Frames folder. This will be the place all the individual frames will be rendered to.
 - Pixelated folder. This is the folder where the BIMP pixelation gets outputted.
-- Edge folder. This is an extra file for people who want edges on the video.
+- Edge folder. This is an extra file if you want edges on your video.
 
 ## CONVERTING VIDEO TO INDIVIDUAL FRAMES
 
@@ -89,3 +91,38 @@ As you can see, the image with dithering keeps more detail than the one without.
 After all the final settings have been set, click apply and let the images process.
 
 ## GENERATING EDGES (*OPTIONAL*)
+
+This chapter is optional, but recommended if you want to have a more stylized output.
+
+**PRO TIP: THIS CAN RUN SIMULTANEOUSLY WITH THE PIXELATION PROCESS, SO THE FINAL PRODUCT CAN BE FINISHED FASTER**
+
+Start by opening the same BIMP window and load in the frames as before. This time though, set the output to be the edge folder, and load the edges.bimp preset instead of the pixelator.bimp preset. After loading in everything, click apply and let the edges generate.
+
+## REBUILDING VIDEO
+
+To rebuild the video, start by opening the compile.blend file.
+
+Import the pixelated image by going to Add>ImageSequence, and find the pixelated folder. *To quickly select all the frames in the folder, press "a", and they will all be selected.
+
+![r1](/assets/addframes.png)
+
+Change the end frame, to the frame length again like in the start.
+
+Now insert the edge frames in the channel over the pixelated frames.
+
+Why are my images blurry? This is normal, because by default, blender upscales using a bilinear filter. You will need to change this on both the edge and the pixelated channels by clicking the small arrow in the top right corner of the sequencer, open the transform menu and change the filter to nearest. You will have to do this for both the edges and the pixelated frames.
+
+![r2](/assets/arrow.png)
+![r2](/assets/changefilter.png)
+
+Finally, you will want to re-add the original video and delete the blue channel, so only the green audio channel remains. The final layout should loke something like this:
+
+![r3](/assets/finallayout.png)
+
+Change the output destination, to a desired location and render!
+
+## THANKS FOR READING!
+
+If you do use my method, could you please remember to give credit. It means a lot!
+**SUBSCRIBE TO MY YOUTUBE CHANNEL TO SEE SOME EXAMPLES!
+https://www.youtube.com/@pringlthechip**
